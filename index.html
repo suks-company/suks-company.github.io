@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suk's Company</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    h1 {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    h1:after {
+      position: relative;
+      display: block;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 327px;
+      height: 111px;
+      background-repeat: no-repeat;
+      background-image: url(./assets/logo.png);
+    }
+
+    .blind {
+      overflow: hidden;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      font-size: 12px;
+      clip: rect(1px, 1px, 1px, 1px);
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    <span class="blind">Suk's Company</span>
+  </h1>
+</body>
+</html>
